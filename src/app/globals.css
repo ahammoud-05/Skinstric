@@ -22,3 +22,9 @@ html, body {
   height: 100%;
   margin: 0;
 }
+
+@layer utilities {
+  .custom-placeholder-style::placeholder {
+    font-style: 'font-roobert';
+  }
+}

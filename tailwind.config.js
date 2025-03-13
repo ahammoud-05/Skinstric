@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roobert: ['Roovert', 'sans-serif'],
+        roobert: ['Roobert', 'sans-serif'],
       }
     },
   },
