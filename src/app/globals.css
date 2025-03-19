@@ -23,8 +23,3 @@ html, body {
   margin: 0;
 }
 
-@layer utilities {
-  .custom-placeholder-style::placeholder {
-    font-style: 'font-roobert';
-  }
-}
