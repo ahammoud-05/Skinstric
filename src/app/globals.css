@@ -23,3 +23,7 @@ html, body {
   margin: 0;
 }
 
+.dem-box {
+  @apply mt-2.5 w-[208px] h-[104px] bg-gray-200 text-black border-t-black border-t-2 hover:bg-gray-300 active:bg-black active:text-white cursor-pointer
+}
+
