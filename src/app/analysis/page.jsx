@@ -22,7 +22,7 @@ const Analysis = () => {
             alt="Outer Rectangle"
             width={762}
             height={762}
-            className="object-contain"
+            className="object-contain hidden md:block"
           />
         </div>
         {/* Second Outer Rectangle */}
@@ -32,7 +32,7 @@ const Analysis = () => {
             alt="Outer Rectangle 2"
             width={682}
             height={682}
-            className="object-contain"
+            className="object-contain hidden md:block"
           />
         </div>
         {/* Inner Rectangle */}
@@ -42,37 +42,37 @@ const Analysis = () => {
             alt="Inner Rectangle"
             width={602}
             height={602}
-            className="object-contain"
+            className="object-contain hidden md:block"
           />
         </div>
 
-        {/* Inner Buttons */}
-        <div className="relative w-[308px] h-[308px]">
-          {/* Top rectangle */}
+        {/* BUTTONS */}
+        <div className="grid grid-cols=1 sm:grid-cols-2 gap-4 md:flex md:flex-wrap md:w-[308px] md:h-[308px] relative">
+          {/* TOP */}
           <Link href="/demographics">
-            <div className="absolute bg-[#e7e7e7] hover:bg-[#c7c4c4] transition-all cursor-pointer w-[154px] h-[154px] top-[-35px] left-[77px] rotate-45">
-              <div className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] text-center text-black font-bold rotate-315">
+            <div className="md:absolute bg-[#e7e7e7] hover:bg-[#c7c4c4] transition-all cursor-pointer w-[154px] h-[154px] md:h-[154px] md:w-[154px] top-[-35px] left-[77px] md:rotate-45">
+              <div className="md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-[50%] md:-translate-y-[50%] text-center text-black md:text-[16px] font-bold md:rotate-315 h-full flex items-center justify-center">
                 DEMOGRAPHICS
               </div>
             </div>
           </Link>
-          {/* Right rectangle */}
-          <div className="absolute bg-[#e7e7e7] w-[154px] h-[154px] top-[77px] left-[190px] rotate-135 cursor-not-allowed">
-            <div className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] text-center text-black font-bold rotate-225">
+          {/* RIGHT */}
+          <div className="md:absolute bg-[#e7e7e7] w-[154px] h-[154px] md:h-[154px] md:w-[154px] top-[77px] left-[190px] md:rotate-135 cursor-not-allowed">
+            <div className="md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-[50%] md:-translate-y-[50%] text-center text-black md:text-[16px] font-bold md:rotate-225 h-full flex items-center justify-center">
               COSMETIC CONCERNS
             </div>
           </div>
 
-          {/* Bottom rectangle */}
-          <div className="absolute bg-[#e7e7e7] w-[154px] h-[154px] top-[190px] left-[77px] rotate-45 cursor-not-allowed">
-            <div className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] text-center text-black font-bold rotate-315">
+          {/* BOTTOM */}
+          <div className="md:absolute bg-[#e7e7e7] w-[154px] h-[154px] md:h-[154px] md:w-[154px] top-[190px] left-[77px] md:rotate-45 cursor-not-allowed">
+            <div className="md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-[50%] md:-translate-y-[50%] text-center text-black md:text-[16px] font-bold md:rotate-315 h-full flex items-center justify-center">
               WEATHER
             </div>
           </div>
 
-          {/* Left rectangle */}
-          <div className="absolute bg-[#e7e7e7] w-[154px] h-[154px] top-[77px] left-[-35px] rotate-135 cursor-not-allowed">
-            <div className="absolute whitespace-nowrap top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] text-center text-black font-bold rotate-225">
+          {/* LEFT */}
+          <div className="md:absolute bg-[#e7e7e7] w-[154px] h-[154px] md:h-[154px] md:w-[154px] top-[77px] left-[-35px] md:rotate-135 cursor-not-allowed">
+            <div className="md:absolute md:top-[50%] md:left-[50%] md:transform md:-translate-x-[50%] md:-translate-y-[50%] text-center text-black md:text-[16px] font-bold md:rotate-225 h-full flex items-center justify-center">
               SKIN TYPE
               <br />
               DETAILS

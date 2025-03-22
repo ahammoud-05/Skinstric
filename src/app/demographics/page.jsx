@@ -72,14 +72,14 @@ const Demographics = () => {
       <div className="flex justify-center flex-col">
         <div className="ml-15">
           <div className="mt-5 font-semibold tracking-tight">A. I. ANALYSIS</div>
-          <div className="text-[4.5rem] leading-none">DEMOGRAPHICS</div>
+          <div className="md:text-[4.5rem] text-[2.5rem] leading-none">DEMOGRAPHICS</div>
           <div className="mt-2 text-gray-700">PREDICTED RACE & AGE</div>
         </div>
-        <div className="flex items-start justify-center w-full mt-15">
+        <div className="md:flex md:items-start md:justify-center w-full mt-15">
           <div className="flex flex-col h-[100%] ml-5">
             {/* RACE BOX */}
             <div
-              className={`w-[208px] h-[104px] transition-all ${selectedBox === "race" ? "bg-black text-white" : "bg-gray-100 text-black hover:bg-gray-300"} border-t-black border-t-2 cursor-pointer`}
+              className={`md:w-[208px] h-[104px] w-[90%] transition-all ${selectedBox === "race" ? "bg-black text-white" : "bg-gray-100 text-black hover:bg-gray-300"} border-t-black border-t-2 cursor-pointer`}
               onClick={() => handleBoxSelection("race")}
             >
               <div className="flex flex-col p-2 font-semibold gap-10">
@@ -90,7 +90,7 @@ const Demographics = () => {
 
             {/* AGE BOX */}
             <div
-              className={`mt-2.5 w-[208px] h-[104px] transition-all ${selectedBox === "age" ? "bg-black text-white" : "bg-gray-100 text-black hover:bg-gray-300"} border-t-black border-t-2 cursor-pointer`}
+              className={`mt-2.5 md:w-[208px] h-[104px] w-[90%] transition-all ${selectedBox === "age" ? "bg-black text-white" : "bg-gray-100 text-black hover:bg-gray-300"} border-t-black border-t-2 cursor-pointer`}
               onClick={() => handleBoxSelection("age")}
             >
               <div className="flex flex-col p-2 font-semibold gap-10">
@@ -101,7 +101,7 @@ const Demographics = () => {
 
             {/* GENDER BOX */}
             <div
-              className={`mt-2.5 w-[208px] h-[104px] transition-all ${selectedBox === "gender" ? "bg-black text-white" : "bg-gray-100 text-black hover:bg-gray-300"} border-t-black border-t-2 cursor-pointer`}
+              className={`mt-2.5 md:w-[208px] h-[104px] w-[90%] transition-all ${selectedBox === "gender" ? "bg-black text-white" : "bg-gray-100 text-black hover:bg-gray-300"} border-t-black border-t-2 cursor-pointer`}
               onClick={() => handleBoxSelection("gender")}
             >
               <div className="flex flex-col p-2 font-semibold gap-10">
@@ -112,14 +112,14 @@ const Demographics = () => {
           </div>
 
           {/* PERCENTAGE BOX */}
-          <div className="w-[60%] h-[544px] bg-gray-100 ml-3 border-t-black border-t-2 flex flex-col relative">
+          <div className="md:w-[60%] w-[90%] h-[544px] bg-gray-100 ml-3 border-t-black border-t-2 flex flex-col relative">
             <div className="text-[2.5rem] mt-2 ml-3">
               {selectedBox === "race" ? capitalizeWords(selectedRace[0]) : selectedBox === "age" ? selectedAge[0] : capitalizeWords(selectedGender[0])}
             </div>
             {/* CIRCLE */}
-            <div className="absolute bottom-0 right-0 mb-5 mr-5 flex items-center justify-center">
+            <div className="absolute bottom-0 right-0 mb-5 mr-5 flex items-center justify-center w-[10rem] sm:w-[15rem] md:w-[30rem] lg:w-[30rem] aspect-square">
               <svg
-                className="w-[30rem] h-[30rem] transform rotate-270"
+                className="md:w-[30rem] md:h-[30rem] w-[10rem] h-[10rem] transform rotate-270"
                 viewBox="0 0 120 120"
               >
                 <circle
@@ -149,7 +149,7 @@ const Demographics = () => {
               </div>
             </div>
           </div>
-          <div className="w-[25%] h-[544px] bg-gray-100 ml-3 border-t-black border-t-2">
+          <div className="md:w-[25%] w-[90%] h-[544px] bg-gray-100 ml-3 border-t-black border-t-2">
             <AIPercent
               setRaceData={setRaceData}
               setAgeData={setAgeData}
@@ -165,8 +165,11 @@ const Demographics = () => {
           </div>
         </div>
       </div>
+      <div className="flex items-center justify-center text-gray-500 text-[1rem] mt-5">
+          If A.I. estimate is wrong, select the correct one.
+        </div>
 
-      <div className="flex items-center mt-auto justify-between ml-10 mr-10 mb-5 gap-5 cursor-pointer">
+      <div className="flex items-center mt-auto justify-between md:mx-10 mx-3 mb-5 md:gap-5 gap-1 cursor-pointer">
         <Link className="flex items-center gap-2" href="analysis">
           <Image
             src="/assets/ButtonIcon.png"
@@ -177,11 +180,8 @@ const Demographics = () => {
           <p className="whitespace-nowrap text-gray-700 font-semibold">BACK</p>
         </Link>
 
-        <div className="flex items-center justify-center text-gray-500 text-[1rem] mt-5">
-          If A.I. estimate is wrong, select the correct one.
-        </div>
 
-        <div className="flex items-center gap-5">
+        <div className="md:flex md:items-center grid grid-col gap-5">
           <button className="mr-2 text-black text-sm border-black border-solid border-1 rounded-[2px] p-2 px-5 cursor-not-allowed">
             RESET
           </button>

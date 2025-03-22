@@ -25,7 +25,7 @@ const TestBtn = () => {
           alt="button-Take-Test-Expanded"
           width={50}
           height={50}
-          className="absolute inset-0 opacity-0 transition-opacity transform scale-100 group-hover:scale-125 group-hover:opacity-100 duration-500 ease-in-out"
+          className="absolute inset-0 opacity-0 transition-opacity transform group-hover:opacity-100 duration-500 ease-in-out"
         />
       </div>
     </div>
