@@ -89,17 +89,17 @@ const Main = () => {
   return (
     <div className="main bg-[#FCFCFC] text-black min-h-screen flex flex-col">
       <Header />
-      <div className="flex-grow flex flex-col md:flex-row items-center justify-center w-full px-6 overflow-hidden">
-        <div className="relative w-full text-center overflow-hidden flex md:flex-col sm:flex-col">
+      <div className="flex-grow flex flex-col items-center justify-center w-full px-6 overflow-hidden">
+        <div className="relative w-full text-center overflow-hidden flex flex-col">
           <div
             ref={titleRef}
-            className="title inline-block text-5xl md:text-7xl lg:text-8xl tracking-[-0.08em]"
+            className="title inline-block text-4xl md:text-7xl lg:text-8xl tracking-[-0.08em]"
           >
             Sophisticated
             <br />
             skincare
           </div>
-          <div className="block md:hidden flex-col">
+          <div className="block lg:hidden flex-col">
             <div className="w-full">
               <Link className="flex items-center justify-center gap-2" href="/intro">
                 <p className="tracking-tighter text-gray-700 font-semibold hover:text-black transition-colors duration-600 ease-in-out">
@@ -118,11 +118,11 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:block" ref={discoverBtnRef}>
+        <div className="hidden lg:block" ref={discoverBtnRef}>
           <DiscoverBtn />
         </div>
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-          <div className="relative w-[302px] h-[602px] hidden md:block">
+          <div className="relative w-[302px] h-[602px] hidden lg:block">
             <Image
               ref={middleRef}
               src="/assets/RightRectangleOuter.png"
@@ -149,14 +149,14 @@ const Main = () => {
             <div
               onMouseEnter={handleHover}
               onMouseLeave={handleHoverLeave}
-              className="md:hidden sm:hidden lg:block"
+              className="lg:block hidden"
             >
               <TestBtn />
             </div>
           </div>
         </div>
       </div>
-      <div className="p-4 w-[30%] uppercase text-[14px] sm:w-full md:w-full">
+      <div className="p-4 md:w-[30%] uppercase text-[14px] w-full">
         <p>
           Skinstric developed an A.I. that creates a highly-personalised routine
           tailored to what your skin needs.

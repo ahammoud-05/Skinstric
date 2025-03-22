@@ -147,7 +147,7 @@ const Intro = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Introduce Yourself"
-                  className="text-4xl w-[395px] text-center outline-none border-b border-black max-w-md 
+                  className="md:text-4xl md:w-[395px] w-[198px] text-l text-center outline-none border-b border-black max-w-md 
         placeholder:text-black placeholder:font-light focus:placeholder-transparent tracking-tighter"
                 />
               </div>
@@ -166,7 +166,7 @@ const Intro = () => {
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
                   placeholder="Where are you from?"
-                  className="text-4xl w-[395px] text-center outline-none border-b border-black max-w-md 
+                  className="md:text-4xl md:w-[395px] w-[198px] text-l text-center outline-none border-b border-black max-w-md 
         placeholder:text-black placeholder:font-light focus:placeholder-transparent tracking-tighter"
                 />
               </div>
